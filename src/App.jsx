@@ -1,4 +1,5 @@
 import Hero from "./components/Hero"
+import Projects from "./components/Projects"
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
         subtitle="software development student"
         description="learning react and building interactive web experiences"
       />
+
+      <Projects/>
     </div>
   )
 }
