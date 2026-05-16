@@ -41,7 +41,9 @@ function Navbar() {
                         className={activeLink === link ? "active-link" : ""}
                         onClick={() => setActiveLink(link)}
                     >
-                        {link}
+                        <a href={`#${link}`}>
+                            {link}
+                        </a>
                     </li>
                 ))}
             </ul>

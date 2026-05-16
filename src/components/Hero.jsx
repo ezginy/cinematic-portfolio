@@ -3,7 +3,7 @@ import './Hero.css'
 // Main hero section
 function Hero(props) {
     return (
-        <section className="hero">
+        <section className="hero" id="home">
             <div className="hero-container">
 
                 <p className="hero-subtitle"> 

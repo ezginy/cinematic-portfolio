@@ -1,5 +1,6 @@
 .projects {
-    padding: 120px 32px;
+    padding: 140px 32px;
+    border-top: 1px solid #1f1f1f;
 }
 
 .projects-title {
