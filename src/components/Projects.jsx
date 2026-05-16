@@ -6,18 +6,21 @@ function Projects() {
     const projects = [
         {
             id: 1,
-            title: "Focusly",
-            description: "productivity dashboard built with javascript"
+            title: "MindCare App",
+            description: "mental wellness concept application",
+            technologies: ["HTML", "CSS", "JavaScript"]
         },
         {
             id: 2,
-            title: "Cinematic Portfolio",
-            description: "interactive portfolio project built with react"
+            title: "Focusly",
+            description: "productivity dashboard built with javascript",
+            technologies: ["HTML", "CSS", "JavaScript"]
         },
         {
             id: 3,
-            title: "MindCare App",
-            description: "mental wellness concept application"
+            title: "Cinematic Portfolio",
+            description: "interactive portfolio project built with react",
+            technologies: ["CSS", "React"]
         }
     ]
 
@@ -31,6 +34,7 @@ function Projects() {
                     key={project.id}
                     title={project.title}
                     description={project.description}
+                    technologies={project.technologies}
                 />
             ))}
 

@@ -32,3 +32,41 @@
     color: #a1a1a1;
     line-height: 1.6;
 }
+
+.project-image {
+    height: 180px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1d1d1d;
+    color: #666;
+}
+
+.project-technologies {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.technology-tag {
+    padding: 8px 14px;
+    background: #202020;
+    border: 1px solid #333;
+    font-size: 14px;
+}
+
+.project-button {
+    margin-top: 28px;
+    padding: 12px 22px;
+    background: transparent;
+    border: 1px solid #3a3a3a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-button:hover {
+    background: white;
+    color: black;
+}
