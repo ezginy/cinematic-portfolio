@@ -1,8 +1,9 @@
+import Hero from "./components/Hero"
+
 function App() {
   return (
     <div className="app">
-      <h1>Ezgi's Cinematic Portfolio</h1>
-      <p>software development student</p>
+      <Hero/>
     </div>
   )
 }
