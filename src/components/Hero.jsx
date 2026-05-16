@@ -1,27 +1,27 @@
 import './Hero.css'
 
 // Main hero section
-function Hero() {
+function Hero(props) {
     return (
         <section className="hero">
             <div className="hero-container">
 
                 <p className="hero-subtitle"> 
-                    software development student
+                    {props.subtitle}
                 </p>
 
                 <h1 className="hero-title">
-                    Ezgi's Cinematic Portfolio
+                    {props.title}
                 </h1>
 
                 <p className="hero-description">
-                    learning react and building interactive web experiences
+                    {props.description}
                 </p>
 
                 <button className="hero-button">
                     explore project
                 </button>
-                
+
             </div>
         </section>
     )
