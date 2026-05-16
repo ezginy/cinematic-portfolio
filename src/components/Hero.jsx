@@ -4,11 +4,19 @@ import './Hero.css'
 function Hero() {
     return (
         <section className="hero">
-            <p className="hero-subtitle"> software development student </p>
-            <h1 className="hero-title">Ezgi's Cinematic Portfolio</h1>
+            <p className="hero-subtitle"> 
+                software development student </p>
+
+            <h1 className="hero-title">
+                Ezgi's Cinematic Portfolio</h1>
+
             <p className="hero-description">
                 learning react and building interactive web experiences
             </p>
+
+            <button className="hero-button">
+                explore project
+            </button>
         </section>
     )
 }

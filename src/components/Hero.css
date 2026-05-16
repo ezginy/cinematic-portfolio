@@ -20,10 +20,28 @@
     font-size: 64px;
     max-width: 900px;
     margin-bottom: 24px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
 }
+
 .hero-description {
     font-size: 18px;
     color: #b3b3b3;
     max-width: 600px;
     line-height: 1.7;
+}
+
+.hero-button {
+    margin-top: 40px;
+    padding: 14px 28px;
+    background: transparent;
+    border: 1px solid #444;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+    color: black;
 }
