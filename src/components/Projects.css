@@ -1,0 +1,16 @@
+.projects {
+    padding: 120px 32px;
+}
+
+.projects-title {
+    font-size: 40px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.project-card {
+    border: 1px solid #2a2a2a;
+    padding: 32px;
+    margin-bottom: 24px;
+    background: #151515;
+}
