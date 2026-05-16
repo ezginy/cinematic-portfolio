@@ -1,4 +1,5 @@
 import "./Projects.css"
+import ProjectCard from "./ProjectCard"
 
 function Projects() {
 
@@ -26,12 +27,11 @@ function Projects() {
             <h2 className="projects-title">Projects</h2>
 
             {projects.map((project) => (
-                <div className="project-card" key={project.id}>
-
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-
-                </div>
+                <ProjectCard
+                    key={project.id}
+                    title={project.title}
+                    description={project.description}
+                />
             ))}
 
         </section>
