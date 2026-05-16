@@ -31,6 +31,12 @@
     color: #999;
 }
 
+.navbar-message {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #888;
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 24px;
