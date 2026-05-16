@@ -30,3 +30,13 @@
 .navbar-links li:hover {
     color: #999;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 24px;
+    }
+
+    .navbar-links {
+        gap: 18px;
+    }
+}
