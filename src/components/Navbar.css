@@ -37,6 +37,11 @@
     color: #888;
 }
 
+.active-link {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 24px;

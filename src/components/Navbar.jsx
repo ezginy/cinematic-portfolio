@@ -7,6 +7,9 @@ function Navbar() {
     // Controls small navbar message visibility
     const [showMessage, setShowMessage] = useState(false)
 
+    // Stores currently active navigation link
+    const [activeLink, setActiveLink] = useState("home")
+
     function handleLogoClick() {
         setShowMessage(!showMessage)
     }
@@ -27,9 +30,21 @@ function Navbar() {
             </div>
 
             <ul className="navbar-links">
-                <li>home</li>
-                <li>projects</li>
-                <li>contact</li>
+                <li
+                    className={activeLink === "home" ? "active-link" : ""}
+                    onClick={() => setActiveLink("home")}>
+                    home
+                </li>
+
+                <li className={activeLink === "projects" ? "active-link" : ""}
+                    onClick={() => setActiveLink("projects")}>
+                    projects
+                </li>
+
+                <li className={activeLink === "contact" ? "active-link" : ""}
+                    onClick={() => setActiveLink("contact")}>
+                    contact
+                </li>
             </ul>
 
         </nav>
