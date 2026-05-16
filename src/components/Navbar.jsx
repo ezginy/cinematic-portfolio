@@ -10,6 +10,11 @@ function Navbar() {
     // Stores currently active navigation link
     const [activeLink, setActiveLink] = useState("home")
 
+    // Navigation links
+    const navLinks = [
+        "home", "projects", "contact"
+    ]
+
     function handleLogoClick() {
         setShowMessage(!showMessage)
     }
@@ -30,21 +35,15 @@ function Navbar() {
             </div>
 
             <ul className="navbar-links">
-                <li
-                    className={activeLink === "home" ? "active-link" : ""}
-                    onClick={() => setActiveLink("home")}>
-                    home
-                </li>
-
-                <li className={activeLink === "projects" ? "active-link" : ""}
-                    onClick={() => setActiveLink("projects")}>
-                    projects
-                </li>
-
-                <li className={activeLink === "contact" ? "active-link" : ""}
-                    onClick={() => setActiveLink("contact")}>
-                    contact
-                </li>
+                {navLinks.map((link) => (
+                    <li
+                        key={link}
+                        className={activeLink === link ? "active-link" : ""}
+                        onClick={() => setActiveLink(link)}
+                    >
+                        {link}
+                    </li>
+                ))}
             </ul>
 
         </nav>
