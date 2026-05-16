@@ -1,28 +1,18 @@
+import { useEffect, useState } from "react"
 import "./Projects.css"
 import ProjectCard from "./ProjectCard"
+import projectsData from "../data/projectsData"
 
 function Projects() {
 
-    const projects = [
-        {
-            id: 1,
-            title: "MindCare App",
-            description: "mental wellness concept application",
-            technologies: ["HTML", "CSS", "JavaScript"]
-        },
-        {
-            id: 2,
-            title: "Focusly",
-            description: "productivity dashboard built with javascript",
-            technologies: ["HTML", "CSS", "JavaScript"]
-        },
-        {
-            id: 3,
-            title: "Cinematic Portfolio",
-            description: "interactive portfolio project built with react",
-            technologies: ["CSS", "React"]
-        }
-    ]
+    // Stores project data
+    const [projects, setProjects] = useState([])
+
+    useEffect(() => {
+
+        setProjects(projectsData)
+
+    }, [])
 
     return (
         <section className="projects" id="projects">
