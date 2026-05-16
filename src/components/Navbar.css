@@ -1,0 +1,32 @@
+.navbar {
+    width: 100%;
+    padding: 28px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-logo {
+    font-size: 24px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.navbar-links li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar-links li:hover {
+    color: #999;
+}
