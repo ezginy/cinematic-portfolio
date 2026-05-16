@@ -4,19 +4,25 @@ import './Hero.css'
 function Hero() {
     return (
         <section className="hero">
-            <p className="hero-subtitle"> 
-                software development student </p>
+            <div className="hero-container">
 
-            <h1 className="hero-title">
-                Ezgi's Cinematic Portfolio</h1>
+                <p className="hero-subtitle"> 
+                    software development student
+                </p>
 
-            <p className="hero-description">
-                learning react and building interactive web experiences
-            </p>
+                <h1 className="hero-title">
+                    Ezgi's Cinematic Portfolio
+                </h1>
 
-            <button className="hero-button">
-                explore project
-            </button>
+                <p className="hero-description">
+                    learning react and building interactive web experiences
+                </p>
+
+                <button className="hero-button">
+                    explore project
+                </button>
+                
+            </div>
         </section>
     )
 }
